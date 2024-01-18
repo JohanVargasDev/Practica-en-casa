@@ -11,6 +11,11 @@ def multiplicar():
     a4=float(input('primer numero '))
     b4=float(input('segundo numero '))
     print(f"el resultado de la operacion es: {a4*b4} ")
+def dividir():
+    a5=float(input('primer numero '))
+    b5=float(input('segundo numero '))
+    print(f"el resultado de la operacion es: {a5/b5}")
+
 def menu():
     a1=input('que operacion desea realizar? ')
     a1=a1.lower()
@@ -18,8 +23,10 @@ def menu():
         sumar()
     if a1== 'resta':
         restar()
-    if a1 =='multiplicar':
+    if a1 =='multiplicacion':
         multiplicar()
+    if a1 == 'division':
+        dividir()
     rep=input('Desea realizar otra operacion? ')
     rep=rep.lower()
     while rep=='si':
