@@ -15,7 +15,10 @@ def dividir():
     a5=float(input('primer numero '))
     b5=float(input('segundo numero '))
     print(f"el resultado de la operacion es: {a5/b5}")
-
+def potenciar():
+    a6=float(input('numero a potenciar '))
+    b6=float(input('numero de potencia '))
+    print(f"el resultado de la operacion es: {a6**b6}")
 def menu():
     a1=input('que operacion desea realizar? ')
     a1=a1.lower()
@@ -27,6 +30,8 @@ def menu():
         multiplicar()
     if a1 == 'division':
         dividir()
+    if a1=='potenciacion':
+        potenciar()
     rep=input('Desea realizar otra operacion? ')
     rep=rep.lower()
     while rep=='si':
